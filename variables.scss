@@ -1,0 +1,59 @@
+$fontFamily: Arial, Helvetica, sans-serif;
+$couleur: #11118B;
+@mixin titre($fontSize: 30px){
+    color: $couleur;
+    font-size: $fontSize;
+}
+@mixin styleSection(){
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@mixin styleButton(){
+    padding: 10px;
+    background-color: $couleur;
+    border-style: none;
+    color: white;
+    transition: background-color 0.5s;
+    text-decoration: none;
+}
+
+@mixin styleTexte(){
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@mixin styleBlock(){
+    padding: 40px;
+    margin: 40px;
+    background-color: #EEEEFC;
+
+}
+
+
+@mixin logo(){
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    background-color: $couleur;
+}
+
+@mixin blur(){
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    
+}
+
+@mixin zoom(){
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .2s ease-in-out;
+}
